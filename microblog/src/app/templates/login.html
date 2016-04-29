@@ -16,7 +16,7 @@ function set_openid(openid, pr){
 <form action="", method="post", name="login">
     {{form.hidden_tag()}}
     <p>
-        Please enter your OpenI, or select one of the providers below:<br>
+        Please enter your OpenID, or select one of the providers below:<br>
         {{form.openid(size=80)}}<br>
         {% for error in form.errors.openid %}
         <span style="color: red;">[{{ error }}]</span>
